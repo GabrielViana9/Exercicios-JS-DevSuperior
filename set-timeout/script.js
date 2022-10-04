@@ -14,10 +14,10 @@ function dizerOla() {
     console.log(`Boa noite ${nome}!`);
   }
   
-  //setTimeout(dizerOla, 2000);
+  //setTimeout(dizerOla, 2000); (Faz a função depois dos milisegundos escolhido)
   
-  setTimeout(() => {
-    dizerBomDia("Maria");
+  setTimeout(() => { // Encadeamento de estrutura para por em ordem quais vão mostrar primeiro
+    dizerBomDia("Maria"); 
     setTimeout(() => {
       dizerBoaTarde("Joao");
       setTimeout(() => {

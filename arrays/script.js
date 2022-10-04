@@ -73,3 +73,30 @@ console.log("\nTeste percorrer array com forEach:");
 frutas.forEach(item => {
     console.log(item);
 });
+
+const numbers1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const maior = Math.max(...numbers1); // Pegando maior número do array com Spread
+
+console.log("\nMaior Número é: ")
+console.log(maior);
+
+const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const menor = Math.min.apply(null, numbers2); // Pegando menor número do array com apply(null, const)
+
+console.log("\nMenor Número é: ")
+console.log(menor);
+
+const numbers3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let maiorNum = 0;
+
+for (let i = 0; i < numbers3.length; i++) { // Pegando maior número do array com Spread dentro do For
+
+   if ( numbers3[i] > maiorNum ) {
+      maiorNum = Math.max(...numbers3);
+      console.log("\nMaior Número é: ");
+      console.log(maiorNum);
+   }
+};
